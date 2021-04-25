@@ -27,7 +27,7 @@ public class SummaryController {
     }
 
     @RequestMapping(value = "/getListByTime",method = RequestMethod.POST)
-    public List<Summary> getSummaryListByPublishTime(@RequestParam("time") String time){
+    public List<Map<String,Object>> getSummaryListByPublishTime(@RequestParam("time") String time){
         return summaryService.getSummaryListByPublishTime(time);
     }
 

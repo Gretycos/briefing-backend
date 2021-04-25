@@ -8,7 +8,7 @@ import java.util.Map;
 public interface SummaryService {
     Summary getSummaryById(String id);
 
-    List<Summary> getSummaryListByPublishTime(String time);
+    List<Map<String,Object>> getSummaryListByPublishTime(String time);
 
     List<Map<String,Object>> getTitleListByPublishTime(String time);
 }
