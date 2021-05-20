@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 public interface SummaryService {
-    Summary getSummaryById(String id);
+    String getLatestDate();
 
     List<Map<String,Object>> getSummaryListByPublishTime(String time);
 

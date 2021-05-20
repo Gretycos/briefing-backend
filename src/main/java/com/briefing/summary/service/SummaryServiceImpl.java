@@ -16,8 +16,8 @@ public class SummaryServiceImpl implements SummaryService{
     private SummaryMapper summaryMapper;
 
     @Override
-    public Summary getSummaryById(String id) {
-        return summaryMapper.getSummaryById(id);
+    public String getLatestDate() {
+        return summaryMapper.getLatestDate();
     }
 
     @Override

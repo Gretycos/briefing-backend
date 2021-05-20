@@ -9,8 +9,8 @@ import java.util.Map;
 
 
 public interface SummaryMapper {
-    @Select("select * from news_summary where article_id = #{id}")
-    Summary getSummaryById(@Param("id") String id);
+    @Select("select max(publish_date) from news_info")
+    String getLatestDate();
 
     @Select("select " +
                 "t1.article_id as article_id," +
